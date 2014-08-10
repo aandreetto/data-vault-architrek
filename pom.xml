@@ -12,6 +12,7 @@
         <name>White Andreetto Consulting</name>
         <url>http://whiteandreetto.com</url>
     </organization>
+
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
@@ -19,6 +20,7 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
     <developers>
         <developer>
             <id>aang</id>
@@ -178,31 +180,35 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!-- Other tools -->
+
+
     </dependencies>
 
     <build>
-        <pluginManagement>
-            <plugins>
+
+        <plugins>
 
 
-                <plugin>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <configuration>
-                        <source>1.7</source>
-                        <target>1.7</target>
-                    </configuration>
-                </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
 
 
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.17</version>
-                </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.17</version>
+            </plugin>
 
-            </plugins>
 
-        </pluginManagement>
+        </plugins>
+
+
     </build>
 
 
